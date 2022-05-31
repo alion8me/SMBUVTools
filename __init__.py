@@ -18,7 +18,7 @@ bl_info = {
         
 class VIEW3D_OT_checker_FAQ(bpy.types.Operator):
     bl_idname = "uv.checker_faq"
-    bl_label = "SMB Checker FAQ [smbuvp]"
+    bl_label = "SMB Checker FAQ [smbuvt]"
     
     bl_options = {'REGISTER', 'UNDO'}
     odd: bpy.props.BoolProperty(name = "Odd?", default=True)
@@ -117,7 +117,7 @@ class VIEW3D_OT_checker_FAQ(bpy.types.Operator):
         
 class VIEW3D_OT_smart_FAQ(bpy.types.Operator):
     bl_idname = "uv.smart_faq"
-    bl_label = "SMB Smart FAQ [smbuvp]"
+    bl_label = "SMB Smart FAQ [smbuvt]"
     
     bl_options = {'REGISTER', 'UNDO'}
     include_active: bpy.props.BoolProperty(name = "Include Active Face?", default=True)
