@@ -226,9 +226,13 @@ class VIEW3D_OT_smart_FAQ(bpy.types.Operator):
             if distance >= max_distance:
                 max_distance = distance
         
-        scaling_factor = self.tile_number / max_distance
+        scaling_factor = 0.5 * self.tile_number / max_distance
         
         #scale the uv coordinates by the scaling factor in the correct direction
+        
+        if self.include_active:
+            for l in active_face.loops:
+                selected_loops.append(l)
         
         for l in selected_loops:
             uv_vert = l[uv_layer].uv
@@ -245,9 +249,10 @@ class VIEW3D_OT_smart_FAQ(bpy.types.Operator):
         
 
 def menu_func(self, context):
+    self.layout.operator(VIEW3D_OT_cube_project_smb_checker.bl_idname)
     self.layout.operator(VIEW3D_OT_checker_FAQ.bl_idname)
     self.layout.operator(VIEW3D_OT_smart_FAQ.bl_idname)
-    self.layout.operator(VIEW3D_OT_cube_project_smb_checker)
+
 
 CLASSES = [VIEW3D_OT_checker_FAQ, VIEW3D_OT_smart_FAQ, VIEW3D_OT_cube_project_smb_checker]
 
