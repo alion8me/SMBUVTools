@@ -1,2 +1,2 @@
 # SMBUVTools
- UV Editing Tools for Super Monkey Ball Blender Plugin
+ A Blender Plugin to add useful UV editing tools primarily for creating Super Monkey Ball stages more efficiently.
