@@ -1,0 +1,3 @@
+this is impossible im pretty sure
+in order to move the final output into place you have to move an object with those three atoms bonded in an l shape from where it is bonded to where the solution is somehow
+you need 3 spaces for the earth-tin-earth atoms + 11 space for the salts + 1 space for the tin input + 1 space for the arm = 16 spaces
